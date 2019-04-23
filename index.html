@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="button">
+        <a href="#"
+          ><img
+            src="Images/Dream_Coffee_Shop_Logo_Free_Vector.jpg"
+            height="100%"
+        /></a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#" class="active"><span class="fa fa-home"> Home</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-info"> Info</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-coffee"> About</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-bomb"> Survey</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <section>
+        <h1>COFFEE</h1>
+        <p>Coffee is the best thing ever!</p>
+        <a class="btn" href="#">Click if you agree</a>
+      </section>
+    </header>
+
+    <blockquote>
+      <p>
+        "If this is Coffee, please pring me some Tea; but if this is Tea, please
+        pring me some Coffee."
+      </p>
+      <footer>-Abraham Lincoln</footer>
+    </blockquote>
+
+    <div id="titles"><h3>Three interesting things about coffee!</h3></div>
+
+    <div class="articles" clearfix>
+      <section>
+        <img src="Images/pexels-photo-372187.jpeg" alt="Coffee Beans!" />
+        <h2>Etymology</h2>
+        <p>
+          The word "coffee" entered the English language in 1582 via the Dutch
+          koffie, borrowed from the Ottoman Turkish kahve, borrowed in turn from
+          the Arabic qahwah (قهوة).[10] The Arabic word qahwah was traditionally
+          held to refer to a type of wine whose etymology is given by Arab
+          lexicographers as deriving from the verb qahiya (قَهِيَ), "to lack
+          hunger", in reference to the drink's reputation as an appetite
+          suppressant. It has also been proposed that the source may be the
+          Proto-Central Semitic root q-h-h meaning "dark".[11] Alternatively,
+          the word Khat, a plant widely used as a stimulant in Yemen and
+          Ethiopia before being supplanted by coffee has been suggested as a
+          possible origin, or the Arabic word quwwah' (meaning "strength").[12]
+          It may also come from the Kingdom of Kaffa in southeast Ethiopia where
+          Coffea arabica grows wild, but this is considered less likely;[11] in
+          the local Kaffa language, the coffee plant is instead called
+          "bunno".[13]
+        </p>
+        <a href="#" class="btn">Click Here</a>
+      </section>
+
+      <section>
+        <img src="Images/pexels-photo-704813.jpeg" alt="Coffee Mug!" />
+        <h2>Biology</h2>
+        <p>
+          Several species of shrub of the genus Coffea produce the berries from
+          which coffee is extracted. The two main species commercially
+          cultivated are Coffea canephora (predominantly a form known as
+          'robusta') and C. arabica.[41] C. arabica, the most highly regarded
+          species, is native to the southwestern highlands of Ethiopia and the
+          Boma Plateau in southeastern Sudan and possibly Mount Marsabit in
+          northern Kenya.[42] C. canephora is native to western and central
+          Subsaharan Africa, from Guinea to Uganda and southern Sudan.[43] Less
+          popular species are C. liberica, C. stenophylla, C. mauritiana, and C.
+          racemosa.
+        </p>
+        <a href="#" class="btn">Click Here</a>
+      </section>
+
+      <section>
+        <img src="Images/pexels-photo-414720.jpeg" alt="Coffee Cup!" />
+        <h2>History</h2>
+        <p>
+          According to legend, ancestors of today's Oromo people in a region of
+          Kaffa in Ethiopia were believed to have been the first to recognize
+          the energizing effect of the coffee plant,[6] though no direct
+          evidence has been found indicating where in Africa coffee first grew
+          or who among the native populations might have used it as a stimulant,
+          earlier than the 15th century.[6] The story of Kaldi, the 9th-century
+          Ethiopian goatherd who discovered coffee when he noticed how excited
+          his goats became after eating the beans from a coffee plant, did not
+          appear in writing until 1671 and is probably apocryphal.[6] Other
+          accounts attribute the discovery of coffee to Sheikh Omar. According
+          to an ancient chronicle (preserved in the Abd-Al-Kadir manuscript),
+          Omar, who was known for his ability to cure the sick through prayer,
+          was once exiled from Mocha in Yemen to a desert cave near Ousab
+          (modern-day Wusab, about 90 km east of Zabid).[15] Starving, Omar
+          chewed berries from nearby shrubbery but found them to be bitter. He
+          tried roasting the seeds to improve the flavor, but they became hard.
+          He then tried boiling them to soften the seed, which resulted in a
+          fragrant brown liquid. Upon drinking the liquid Omar was revitalized
+          and sustained for days. As stories of this "miracle drug" reached
+          Mocha, Omar was asked to return and was made a saint.[16]
+        </p>
+        <a href="#" class="btn">Click Here</a>
+      </section>
+    </div>
+
+    <div id="myfollow"><h3 id="myid">Follow Coffee on these Platform</h3></div>
+    <!-- <div class="articles clearfixm small"></div> -->
+
+    <div id="one">
+      <a href="#" class="black"><span class="fa fa-facebook fa-5x"></span></a>
+      <h2 class="red">Facebook</h2>
+    </div>
+
+    <div id="two">
+      <a href="#" class="black"><span class="fa fa-instagram fa-5x"></span></a>
+      <h2 class="red">Instagram</h2>
+    </div>
+
+    <div id="three">
+      <a href="#" class="black"><span class="fa fa-twitter fa-5x"></span></a>
+      <h2 class="red">Twitter</h2>
+    </div>
+
+    <footer id="second">
+      <h1>Copyright: &copy; Make America Drink Coffee Again!!!!</h1>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".button").click(function() {
+          $("ul li").slideToggle("slow", function() {
+            // Animation complete.
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
